@@ -2,10 +2,10 @@ package com.example.brand.informer.DataManager;
 
 import android.app.Activity;
 import android.content.Context;
-import android.provider.ContactsContract;
+import android.widget.ListView;
 import android.widget.TableLayout;
 
-import com.example.brand.informer.DataManager.CellCreator.CellCreator;
+import com.example.brand.informer.DataManager.CellAdapter.CustomCellAdapter;
 import com.example.brand.informer.DataManager.FileParser.JSONParser;
 import com.example.brand.informer.DataModel.ItemList;
 import com.example.brand.informer.MainActivity;
@@ -32,12 +32,15 @@ public class DataController {
         itemList = jp.fileDecode();
     }
 
-    public TableLayout constructTable(){
+    public void constructTable(){
         if (itemList == null){
-            return null;
+            return ;
         }
-        CellCreator cellCreator = new CellCreator(context);
-        return cellCreator.cteateCellGrid(itemList);
+        JSONParser jsonParser = new JSONParser(activity, R.raw.items2);
+        itemList = jsonParser.fileDecode();
+        ListView listview = (ListView) activity.findViewById(R.id.listview);
+        listview.setAdapter(new CustomCellAdapter(context, itemList));
     }
+
 
 }

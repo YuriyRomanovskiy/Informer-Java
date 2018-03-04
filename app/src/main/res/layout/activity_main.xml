@@ -6,75 +6,16 @@
     android:layout_height="match_parent"
     tools:context="com.example.brand.informer.MainActivity">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        <TableLayout
-            android:id="@+id/TableLayout1"
-            android:layout_width="344dp"
-            android:layout_height="495dp"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
 
-            <TableRow
-                android:id="@+id/TableRow1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" >
-                <ImageView
-                    android:id="@+id/image1"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/divide">
-                </ImageView>
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
 
-                <TableLayout
-                    android:id="@+id/ChildTableLayout1"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TableRow
-                        android:id="@+id/ChildTableRow1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                        <TextView
-                            android:id="@+id/name"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="name">
-                        </TextView>
-                    </TableRow>
-                    <TableRow
-                        android:id="@+id/ChildTableRow2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                        <TextView
-                            android:id="@+id/desc1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="desc1">
-                        </TextView>
-                    </TableRow>
-                    <TableRow
-                        android:id="@+id/ChildTableRow3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
-                        <TextView
-                            android:id="@+id/desc2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="left"
-                            android:text="dec2">
-                        </TextView>
-                    </TableRow>
-                </TableLayout>
-
-            </TableRow>
-
-        </TableLayout>
-    </ScrollView>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
