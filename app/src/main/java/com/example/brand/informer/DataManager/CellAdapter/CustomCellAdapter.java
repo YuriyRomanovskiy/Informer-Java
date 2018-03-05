@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.brand.informer.DataManager.ResourceManager.ResourceManager;
 import com.example.brand.informer.DataModel.ItemList;
@@ -59,4 +61,5 @@ public class CustomCellAdapter extends BaseAdapter {
         image.setImageResource(ResourceManager.getDrawableResourceID(context,data.item[position].image1));
         return view;
     }
+
 }

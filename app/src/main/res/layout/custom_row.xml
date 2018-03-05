@@ -7,10 +7,10 @@
         android:layout_height="match_parent"
         android:orientation="horizontal" >
 
-<TableLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
     <TableRow>
     <ImageView
         android:id="@+id/iamge1"

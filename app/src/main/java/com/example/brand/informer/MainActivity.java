@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         DataController dataController = new DataController(MainActivity.this,this);
-        dataController.constructTable();
+        dataController.constructView();
 
     }
 
