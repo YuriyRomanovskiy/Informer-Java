@@ -1,4 +1,4 @@
-package com.example.brand.informer.DataManager;
+package com.example.brand.informer.Controllers;
 
 /**
  * Created by brand on 05.03.2018.

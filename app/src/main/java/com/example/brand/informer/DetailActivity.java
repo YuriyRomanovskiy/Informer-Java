@@ -1,30 +1,30 @@
 package com.example.brand.informer;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.view.View;
 
-import com.example.brand.informer.DataManager.DetailDataController;
-import com.example.brand.informer.DataManager.ResourceManager.ResourceManager;
+import com.example.brand.informer.Controllers.DetailDataController;
 
 public class DetailActivity extends AppCompatActivity {
 
-    private String detailNameString;
-    private String detailFullDesrString;
-    private String detailImagePath;
-    private String detailShortDesrString;
-    private String detailLinkString;
+    private DetailDataController dataController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        DetailDataController dataController = new DetailDataController(DetailActivity.this, this);
+        dataController = new DetailDataController(DetailActivity.this, this);
         dataController.constructView();
     }
+
+
+    public void onMyButtonClick(View view)
+    {
+        dataController.shareData();
+    }
+
 
 }

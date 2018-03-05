@@ -7,7 +7,10 @@ import android.content.Context;
  */
 
 public class ResourceManager {
+    public static final String DEF_TYPE = "drawable";
+    public static final String DEF_PACAGE = "com.example.brand.informer";
+
     public static  int getDrawableResourceID(Context context, String resource){
-        return context.getResources().getIdentifier(resource,"drawable","com.example.brand.informer") ;
+        return context.getResources().getIdentifier(resource,DEF_TYPE,DEF_PACAGE) ;
     }
 }

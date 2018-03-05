@@ -11,34 +11,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
-    <TableRow>
+    <TableRow
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
     <ImageView
         android:id="@+id/iamge1"
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:src="@drawable/abs1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
         />
-        <TableLayout>
+        <TableLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
             <TableRow>
                 <TextView
                     android:id="@+id/name"
                     android:layout_height="25dp"
                     android:layout_width="wrap_content"
-                    android:text="asdasdasd"/>
+                    android:text="name"
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
             </TableRow>
             <TableRow>
                 <TextView
                     android:id="@+id/desc1"
                     android:layout_height="25dp"
                     android:layout_width="wrap_content"
-                    android:text="asdasdasd"/>
+                    android:text="desc1"
+                    android:textSize="16dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
             </TableRow>
             <TableRow>
                 <TextView
                     android:id="@+id/desc2"
                     android:layout_height="25dp"
                     android:layout_width="wrap_content"
-                    android:text="asdasdasd"/>
+                    android:text="desc2"
+                    android:textSize="16dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"/>
             </TableRow>
         </TableLayout>
 

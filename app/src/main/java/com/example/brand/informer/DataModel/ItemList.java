@@ -5,5 +5,7 @@ package com.example.brand.informer.DataModel;
  */
 
 public class ItemList {
-    public Item[] item;
+    private Item[] item;
+
+    public Item[] getItem(){return item;}
 }

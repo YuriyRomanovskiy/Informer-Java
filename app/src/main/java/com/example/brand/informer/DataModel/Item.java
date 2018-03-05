@@ -5,11 +5,19 @@ package com.example.brand.informer.DataModel;
  */
 
 public class Item {
-    public String name;
-    public String desc1;
-    public String desc2;
-    public String fullDesc;
-    public String image1;
-    public String image2;
-    public String link;
+    private String name;
+    private String desc1;
+    private String desc2;
+    private String fullDesc;
+    private String image1;
+    private String image2;
+    private String link;
+
+    public String getName(){return name;}
+    public String getDesc1(){return desc1;}
+    public String getDesc2(){return desc2;}
+    public String getFullDesc(){return fullDesc;}
+    public String getImage1(){return image1;}
+    public String getImage2(){return image2;}
+    public String getLink(){return link;}
 }

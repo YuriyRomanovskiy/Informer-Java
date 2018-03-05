@@ -33,12 +33,12 @@ public class CustomCellAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return data.item.length;
+        return data.getItem().length;
     }
 
     @Override
     public Object getItem(int position) {
-        return data.item[position];
+        return data.getItem()[position];
     }
 
     @Override
@@ -52,13 +52,13 @@ public class CustomCellAdapter extends BaseAdapter {
         if (view == null)
             view = inflater.inflate(R.layout.custom_row, null);
         TextView name = (TextView) view.findViewById(R.id.name);
-        name.setText(data.item[position].name);
+        name.setText(data.getItem()[position].getName());
         TextView desc1 = (TextView) view.findViewById(R.id.desc1);
-        desc1.setText(data.item[position].desc1);
+        desc1.setText(data.getItem()[position].getDesc1());
         TextView desc2 = (TextView) view.findViewById(R.id.desc2);
-        desc2.setText(data.item[position].desc2);
+        desc2.setText(data.getItem()[position].getDesc2());
         ImageView image = (ImageView) view.findViewById(R.id.iamge1);
-        image.setImageResource(ResourceManager.getDrawableResourceID(context,data.item[position].image1));
+        image.setImageResource(ResourceManager.getDrawableResourceID(context,data.getItem()[position].getImage1()));
         return view;
     }
 

@@ -3,7 +3,7 @@ package com.example.brand.informer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.brand.informer.DataManager.DataController;
+import com.example.brand.informer.Controllers.DataController;
 
 public class MainActivity extends AppCompatActivity {
 

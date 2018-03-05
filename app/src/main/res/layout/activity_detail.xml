@@ -9,6 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TableLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
@@ -21,36 +23,53 @@
                     android:src="@drawable/abs1"
                     />
                 <TableLayout
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_width="190dp">
                     <TableRow>
                         <TextView
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
+                            android:layout_marginBottom="15dp"
                             android:id="@+id/detailName"
                             android:layout_height="wrap_content"
                             android:layout_width="match_parent"
-                            android:text="name"/>
+                            android:text="name"
+                            android:textSize="20dp"
+                            android:textColor="#000000"/>
                     </TableRow>
                     <TableRow
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
                         <TextView
                             android:id="@+id/detailDesc"
+                            android:layout_marginLeft="5dp"
+                            android:padding="5dp"
                             android:layout_height="wrap_content"
-                            android:layout_width="match_parent"
-                            android:text="short descr"/>
+                            android:layout_width="wrap_content"
+                            android:textSize="16dp"
+
+                            android:text="desc"/>
                     </TableRow>
                 </TableLayout>
             </TableRow>
             <TextView
+                android:layout_marginBottom="20dp"
                 android:id="@+id/detailFullDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="16dp"
                 android:text="full Descffull Descfull Descfull Descfull Descfull Descfull Descfull Descfull Descfull Descfull Descfull Descfull Descfull Descfull Descull full Descfull Descfull Descfull Desc Desc"
+                android:textAlignment="inherit"
                 />
-            <TextView
-                android:id="@+id/detailLink"
+
+            <Button
+                android:id="@+id/detailButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="link"
-                android:textColor="#0040ff"/>
+                android:textColor="#0237f9"
+                android:onClick="onMyButtonClick"
+                android:layout_marginBottom="10dp"/>
         </TableLayout>
     </ScrollView>
 
